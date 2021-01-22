@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:health_plus/doctor_list.dart';
 
+import 'doctor_list.dart';
+
 class FindDoctor extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -39,7 +41,7 @@ class FindDoctor extends StatelessWidget {
                       borderRadius: BorderRadius.circular(18.0),),
                   color: Colors.deepOrange,
                   onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>DoctorList()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>AllDoctorList()));
                   }
               ),
             ),
